@@ -19,13 +19,24 @@
     </head>
     <body style="background: #eeeeee">
         <div class="container p-3" style="background: #dddddd">
-            <div class="row mx-auto bg-gray" id="header">
+            <div class="row mx-auto d-none d-sm-flex bg-gray" id="header">
                 <img src="logo.png" class="img-fluid float-left col-3" alt="Treehab logo">
                 <div class="col-2 align-self-end mb-3">
                     <h1>Treehab Recovery</h1>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="row mx-auto d-flex d-sm-none bg-gray" id="header-mobile">
+                <img src="logo.png" class="img-fluid float-left mb-2" style="width:40%" alt="Treehab logo">
+                <div class="col-2 align-self-end mb-2">
+                    <h3>Treehab Recovery</h3>
+                </div>
+            </div>
+            <nav class="navbar d-flex d-sm-none navbar-expand-lg navbar-light bg-light">
+                <a class="nav-link col-4" href="#">HOME</a>
+                <a class="nav-link col-4" href="#">ABOUT</a>
+                <a class="nav-link col-4" href="#">CONTACT</a>
+            </nav>
+            <nav class="navbar d-none d-sm-flex navbar-expand-lg navbar-light bg-light">
                 <a class="nav-link" href="#">HOME</a>
                 <a class="nav-link" href="#">ABOUT</a>
                 <a class="nav-link" href="#">CONTACT</a>
@@ -34,28 +45,29 @@
         
         <div class="container mt-3" id="content">
             <div class="row">
-                <div class="col-8 m-3">
+                <div class="col-12 col-sm-8 m-3">
                     <h2>A Treeplanting Rehab</h2>
-                    <p>Treehab is a therapeutic work placement for offenders on conditional release. The project will partner with ‘Aghel Nebun in Prince
+                    <p class="pr-2">Treehab is a therapeutic work placement for offenders on conditional release. The project will partner with ‘Aghel Nebun in Prince
                     George and offer three graduates of the CRF jobs as tree planters during the 2021 spring planting season. Each participant will be paired
                     with a veteran tree planter with at least five years of experience. Planters will be paid per tree at the industry rate, incentivizing
                     hard work ethic.</p>
                 </div>
-                <div class="card ml-auto col-3 m-3" style="width: 18rem">
+                <div class="card mx-auto col-10 mr-md-3 col-md-3 m-3" style="width: 18rem">
                     <img src="tree-amigos.png" class="card-img-top" alt="Tree Amigos Logo">
                     <div class="card-body">
                         <p class="card-text">Treehab operates under the Tree Amigos Workers Co-op</p>
                     </div>
                 </div>
             </div>
+            <hr>
             <div class="row">
-                <div class="card mr-auto col-2 m-3">
+                <div class="card mr-auto col-5 h-100 col-md-2 m-3">
                     <img src="safe-certified.png" class="card-img-top mt-2" alt="SAFE Logo">
                     <div class="card-body">
                         <p class="card-text" style="font-size: 1rem">SAFE Certified</p>
                     </div>
                 </div>
-                <div class="col-9 mr-auto"> 
+                <div class="col-6 col-md-9 mr-auto"> 
                     <h2>Certified</h2>
                     <p>Our organization is SAFE certified and our staff members each have OFA Level 3. Staff will also be equipped with radios and
                 inReach® technology for safety and security communications.</p>
